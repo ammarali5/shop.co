@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="icon" href="images/logo.ico" type="image/icon">
-    <title>index</title>
+    <title>cart</title>
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
@@ -27,12 +27,14 @@
                 <div class="center">
                     <ul class="collapse nav-links" id="nav-links">
                         <li><a href="#">Shop<i></i></a></li>
+                        <li><a href="#new_arrival">New Arrivals</a></li>
+                        <li><a href="#top_selling">Top Selling</a></li>
+                        <li><a href="#style">Styles</a></li>
                     </ul>
                     <div class="search_container" id="search_container">
                         <div class="search_bar">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" name="search_items" id="search_items"
-                                placeholder="search for products...">
+                            <input type="text" name="search_items" id="search_items" placeholder="search for products...">
                         </div>
                         <button class="close_search_bar" id="close_search_bar">
                             <i class="fa-solid fa-xmark"></i>
@@ -42,11 +44,40 @@
                 <div class="icons">
                     <i class="fa-solid fa-magnifying-glass search_collapse" id="search_collapse"></i>
                     <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <i class="fa-regular fa-circle-user"></i>
+                    <i class="fa-regular fa-circle-user user-icon"></i>
                 </div>
             </nav>
         </div>
     </header>
+
+    <div class="overlay">
+        <div class="sign_in_form">
+            <i class="fa-solid fa-xmark close_sign_in"></i>
+            <form action="#">
+                <label for="usename">Usename</label>
+                <input type="text" name="usename" id="usename">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <button class="black-btn" type="submit">Sign In</button>
+            </form>
+            <p>Don't have account? <button id="signUp">SignUp</button></p>
+        </div>
+        <div class="sign_up_form">
+            <i class="fa-solid fa-xmark close_sign_up"></i>
+            <form action="#">
+                <label for="usename">Usename</label>
+                <input type="text" name="usename" id="usename">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm_password">
+                <button class="black-btn" type="submit">Sign Up</button>
+            </form>
+            <p>Already have account? <button id="signIn">SignIn</button></p>
+        </div>
+    </div>
 
     <nav class="breadcrumb container">
         <a href="index.html">Home</a>
