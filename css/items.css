@@ -1,0 +1,7 @@
+.category-items {
+    flex-wrap: wrap;
+}
+
+.items-container {
+    margin: 2rem auto 14rem auto;
+}

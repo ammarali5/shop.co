@@ -1,27 +1,27 @@
 /* === cart === */
-.breadcrumb {
+.navPages {
     padding: 2rem 0rem 0rem;
     display: flex;
     align-items: center;
     font-size: 16px;
 }
 
-.breadcrumb a {
+.navPages a {
     text-decoration: none;
     color: var(--gray);
     transition: color 0.3s;
 }
 
-.breadcrumb a:hover {
+.navPages a:hover {
     color: var(--primary-text);
 }
 
-.breadcrumb span {
+.navPages span {
     margin: 0 8px;
     color: var(--gray);
 }
 
-.breadcrumb .active {
+.navPages .active {
     color: var(--primary-text);
     font-weight: 400;
 }

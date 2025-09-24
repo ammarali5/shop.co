@@ -566,6 +566,18 @@ input[name="search_items"] {
 
 .item {
     text-align: left;
+    cursor: pointer;
+}
+
+.item p {
+    margin: 0.5rem 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+.item img {
+    border-radius: 2rem;
 }
 
 .new_arrival-container button,
@@ -714,7 +726,7 @@ input[name="search_items"] {
     /* flex-shrink: 0; */
 }
 
-.review .stars {
+.stars {
     color: gold;
     margin-bottom: 1rem;
 }

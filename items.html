@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/items.css">
 </head>
 
 <body>
@@ -26,14 +28,12 @@
                 <div class="center">
                     <ul class="collapse nav-links" id="nav-links">
                         <li><a href="#">Shop<i></i></a></li>
-                        <li><a href="#new_arrival">New Arrivals</a></li>
-                        <li><a href="#top_selling">Top Selling</a></li>
-                        <li><a href="#style">Styles</a></li>
                     </ul>
                     <div class="search_container" id="search_container">
                         <div class="search_bar">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" name="search_items" id="search_items" placeholder="search for products...">
+                            <input type="text" name="search_items" id="search_items"
+                                placeholder="search for products...">
                         </div>
                         <button class="close_search_bar" id="close_search_bar">
                             <i class="fa-solid fa-xmark"></i>
@@ -78,61 +78,19 @@
         </div>
     </div>
 
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero_title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-                <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your
-                    individuality and cater to your sense of style.</p>
-                <button class="black-btn">shop Now</button>
-                <div class="hero-staitcs">
-                    <div class="static-div one">
-                        <h3><span>200</span>+</h3>
-                        <p>International Brands</p>
-                    </div>
-                    <div class="static-div two">
-                        <h3><span>2,000</span>+</h3>
-                        <p>High-Quality Products</p>
-                    </div>
-                    <div class="static-div three">
-                        <h3><span>30,000</span>+</h3>
-                        <p>Happy Customers</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img class="center-star" src="images/Vector.png" alt="">
-                <img class="main" src="images/hero.jpg" alt="">
-                <img class="right-star" src="images/Vector2.png" alt="">
-            </div>
-        </div>
-    </section>
+    <nav class="navPages container">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span class="active"><span class="category-name">casul</span></span>
+    </nav>
 
-    <section class="brands">
-        <div class="brand">
-            <img src="images/brands/versace.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="images/brands/zara.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="images/brands/gucci.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="images/brands/prada.png" alt="">
-        </div>
-        <div class="brand">
-            <img src="images/brands/calvinKlein.png" alt="">
-        </div>
-    </section>
-
-    <section class="new_arrival" id="new_arrival">
-        <div class="container new_arrival-container">
-            <h2>NEW ARRIVALS</h2>
-            <div class="items">
+    <section class="category-main" id="category-main">
+        <div class="container items-container">
+            <h2 class="category">casual</h2>
+            <div class="category-items items">
                 <div class="item">
-                    <img src="images/new_arival/1.png" alt="">
-                    <p>T-SHIRT WITH TAPE DETAILS</p>
+                    <img src="images/category_items/1.png" alt="Gradient Graphic T-shirt">
+                    <p>Gradient Graphic T-shirt</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -140,23 +98,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p>$<span>120</span></p>
+                    <p>$<span>145</span></p>
                 </div>
+
                 <div class="item">
-                    <img src="images/new_arival/2.png" alt="">
-                    <p>SKINNY FIT JEANS</p>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p>$<span>240</span></p>
-                </div>
-                <div class="item">
-                    <img src="images/new_arival/3.png" alt="">
-                    <p>CHECKERED SHIRT</p>
+                    <img src="images/category_items/2.png" alt="Polo with Tipping Details">
+                    <p>Polo with Tipping Details</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -166,31 +113,10 @@
                     </div>
                     <p>$<span>180</span></p>
                 </div>
-                <div class="item">
-                    <img src="images/new_arival/4.png" alt="">
-                    <p>SLEEVE STRIPED T-SHIRT</p>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p>$<span>130</span></p>
-                </div>
-            </div>
-            <button class="white-btn">View All</button>
-            <hr>
-        </div>
-    </section>
 
-    <section class="top_selling" id="top_selling">
-        <div class="container top_selling-container">
-            <h2>top selling</h2>
-            <div class="items">
                 <div class="item">
-                    <img src="images/top_selling/1.png" alt="">
-                    <p>T-SHIRT WITH TAPE DETAILS</p>
+                    <img src="images/category_items/3.png" alt="Black Striped T-shirt">
+                    <p>Black Striped T-shirt</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -198,11 +124,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p>$<span>120</span></p>
+                    <p>$<span>120</span> <del>150</del> <small>-30%</small></p>
                 </div>
+
                 <div class="item">
-                    <img src="images/top_selling/2.png" alt="">
-                    <p>SKINNY FIT JEANS</p>
+                    <img src="images/category_items/4.png" alt="Skinny Fit Jeans">
+                    <p>Skinny Fit Jeans</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -210,11 +137,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p>$<span>240</span></p>
+                    <p>$<span>240</span> <del>260</del> <small>-20%</small></p>
                 </div>
+
                 <div class="item">
-                    <img src="images/top_selling/3.png" alt="">
-                    <p>CHECKERED SHIRT</p>
+                    <img src="images/category_items/5.png" alt="Checkered Shirt">
+                    <p>Checkered Shirt</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -224,9 +152,10 @@
                     </div>
                     <p>$<span>180</span></p>
                 </div>
+
                 <div class="item">
-                    <img src="images/top_selling/4.png" alt="">
-                    <p>SLEEVE STRIPED T-SHIRT</p>
+                    <img src="images/category_items/6.png" alt="Sleeve Striped T-shirt">
+                    <p>Sleeve Striped T-shirt</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -234,44 +163,25 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p>$<span>130</span></p>
+                    <p>$<span>130</span> <del>160</del> <small>-30%</small></p>
                 </div>
-            </div>
-            <button class="white-btn">View All</button>
-        </div>
-    </section>
 
-    <section class="dress_styles" id="style">
-        <div class="container dress_styles-container">
-            <h1>BROWSE BY dress STYLE</h1>
-            <div class="styles">
-                <div class="style casual">
-                    <p>casual</p>
+                <div class="item">
+                    <img src="images/category_items/7.png" alt="Vertical Striped Shirt">
+                    <p>Vertical Striped Shirt</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$<span>212</span> <del>232</del> <small>-20%</small></p>
                 </div>
-                <div class="style formal">
-                    <p>formal</p>
-                </div>
-                <div class="style party">
-                    <p>party</p>
-                </div>
-                <div class="style gym">
-                    <p>gym</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="reviews-section">
-        <div class="container">
-            <div class="reviews_header">
-                <h2>OUR HAPPY CUSTOMERS</h2>
-                <div class="reviews-nav">
-                    <button class="reviews-left-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="reviews-right-btn"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="reviews">
-                <div class="review">
+                <div class="item">
+                    <img src="images/category_items/8.png" alt="Courage Graphic T-shirt">
+                    <p>Courage Graphic T-shirt</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -279,12 +189,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h3 class="reviewer_name">Sarah M.</h3>
-                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear
-                        to
-                        elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                    <p>$<span>145</span></p>
                 </div>
-                <div class="review">
+
+                <div class="item">
+                    <img src="images/category_items/9.png" alt="Loose Fit Bermuda Shorts">
+                    <p>Loose Fit Bermuda Shorts</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -292,12 +202,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h3 class="reviewer_name">Sarah M.</h3>
-                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear
-                        to
-                        elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                    <p>$<span>80</span></p>
                 </div>
-                <div class="review">
+                
+                <div class="item">
+                    <img src="images/category_items/9.png" alt="Loose Fit Bermuda Shorts">
+                    <p>Loose Fit Bermuda Shorts</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -305,14 +215,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h3 class="reviewer_name">Alex K.</h3>
-                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered
-                        Shop.co.
-                        The range of options they offer is truly remarkable, catering to a variety of tastes and
-                        occasions.”
-                    </p>
+                    <p>$<span>80</span></p>
                 </div>
-                <div class="review">
+                
+                <div class="item">
+                    <img src="images/category_items/9.png" alt="Loose Fit Bermuda Shorts">
+                    <p>Loose Fit Bermuda Shorts</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -320,13 +228,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h3 class="reviewer_name">James L.</h3>
-                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-                        upon
-                        Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
-                    </p>
+                    <p>$<span>80</span></p>
                 </div>
-                <div class="review">
+                
+                <div class="item">
+                    <img src="images/category_items/9.png" alt="Loose Fit Bermuda Shorts">
+                    <p>Loose Fit Bermuda Shorts</p>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -334,12 +241,9 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h3 class="reviewer_name">James L.</h3>
-                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-                        upon
-                        Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
-                    </p>
+                    <p>$<span>80</span></p>
                 </div>
+
             </div>
         </div>
     </section>
@@ -353,7 +257,7 @@
                     <button class="white-btn" type="submit">Subscribe to Newsletter</button>
                 </form>
             </div>
-    
+
             <div class="footer-main">
                 <div class="footer-brand">
                     <h3>SHOP.CO</h3>
@@ -368,7 +272,7 @@
                         <a href="#"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-    
+
                 <div class="footer-links">
                     <div>
                         <h4>COMPANY</h4>
@@ -400,7 +304,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="footer-bottom">
                 <p>Shop.co © 2000-2023, All Rights Reserved</p>
                 <div class="payments">
@@ -415,6 +319,7 @@
     </footer>
 
 
+    <script src="scripts/items.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
