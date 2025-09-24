@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="images/logo.ico" type="image/icon">
+    <title>shop.co</title>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="loading" id="loading"></div>
+
+    <header>
+        <div class="relative">
+            <nav class="container">
+                <div class="left">
+                    <i class="fa-solid fa-bars collapse_bar" id="collapse_bar"></i>
+                    <div class="brand"><a href="index.html">SHOP.CO</a></div>
+                </div>
+                <div class="center">
+                    <ul class="collapse nav-links" id="nav-links">
+                        <li><a href="#">Shop<i></i></a></li>
+                        <li><a href="#new_arrival">New Arrivals</a></li>
+                        <li><a href="#top_selling">Top Selling</a></li>
+                        <li><a href="#style">Styles</a></li>
+                    </ul>
+                    <div class="search_container" id="search_container">
+                        <div class="search_bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" name="search_items" id="search_items" placeholder="search for products...">
+                        </div>
+                        <button class="close_search_bar" id="close_search_bar">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass search_collapse" id="search_collapse"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <i class="fa-regular fa-circle-user user-icon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="sign_in_form">
+            <i class="fa-solid fa-xmark close_sign_in"></i>
+            <form action="#">
+                <label for="usename">Usename</label>
+                <input type="text" name="usename" id="usename">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <button class="black-btn" type="submit">Sign In</button>
+            </form>
+            <p>Don't have account? <button id="signUp">SignUp</button></p>
+        </div>
+        <div class="sign_up_form">
+            <i class="fa-solid fa-xmark close_sign_up"></i>
+            <form action="#">
+                <label for="usename">Usename</label>
+                <input type="text" name="usename" id="usename">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm_password">
+                <button class="black-btn" type="submit">Sign Up</button>
+            </form>
+            <p>Already have account? <button id="signIn">SignIn</button></p>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero_title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your
+                    individuality and cater to your sense of style.</p>
+                <button class="black-btn">shop Now</button>
+                <div class="hero-staitcs">
+                    <div class="static-div one">
+                        <h3><span>200</span>+</h3>
+                        <p>International Brands</p>
+                    </div>
+                    <div class="static-div two">
+                        <h3><span>2,000</span>+</h3>
+                        <p>High-Quality Products</p>
+                    </div>
+                    <div class="static-div three">
+                        <h3><span>30,000</span>+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img class="center-star" src="images/Vector.png" alt="">
+                <img class="main" src="images/hero.jpg" alt="">
+                <img class="right-star" src="images/Vector2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="brand">
+            <img src="images/brands/versace.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="images/brands/zara.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="images/brands/gucci.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="images/brands/prada.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="images/brands/calvinKlein.png" alt="">
+        </div>
+    </section>
+
+    <section class="new_arrival" id="new_arrival">
+        <div class="container new_arrival-container">
+            <h2>NEW ARRIVALS</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="images/new_arival/1.png" alt="">
+                    <p>T-SHIRT WITH TAPE DETAILS</p>
+                    <p>$<span>120</span></p>
+                </div>
+                <div class="item">
+                    <img src="images/new_arival/2.png" alt="">
+                    <p>SKINNY FIT JEANS</p>
+                    <p>$<span>240</span></p>
+                </div>
+                <div class="item">
+                    <img src="images/new_arival/3.png" alt="">
+                    <p>CHECKERED SHIRT</p>
+                    <p>$<span>180</span></p>
+                </div>
+                <div class="item">
+                    <img src="images/new_arival/4.png" alt="">
+                    <p>SLEEVE STRIPED T-SHIRT</p>
+                    <p>$<span>130</span></p>
+                </div>
+            </div>
+            <button class="white-btn">View All</button>
+            <hr>
+        </div>
+    </section>
+
+    <section class="top_selling" id="top_selling">
+        <div class="container top_selling-container">
+            <h2>top selling</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="images/top_selling/1.png" alt="">
+                    <p>T-SHIRT WITH TAPE DETAILS</p>
+                    <p>$<span>120</span></p>
+                </div>
+                <div class="item">
+                    <img src="images/top_selling/2.png" alt="">
+                    <p>SKINNY FIT JEANS</p>
+                    <p>$<span>240</span></p>
+                </div>
+                <div class="item">
+                    <img src="images/top_selling/3.png" alt="">
+                    <p>CHECKERED SHIRT</p>
+                    <p>$<span>180</span></p>
+                </div>
+                <div class="item">
+                    <img src="images/top_selling/4.png" alt="">
+                    <p>SLEEVE STRIPED T-SHIRT</p>
+                    <p>$<span>130</span></p>
+                </div>
+            </div>
+            <button class="white-btn">View All</button>
+        </div>
+    </section>
+
+    <section class="dress_styles" id="style">
+        <div class="container dress_styles-container">
+            <h1>BROWSE BY dress STYLE</h1>
+            <div class="styles">
+                <div class="style casual">
+                    <p>casual</p>
+                </div>
+                <div class="style formal">
+                    <p>formal</p>
+                </div>
+                <div class="style party">
+                    <p>party</p>
+                </div>
+                <div class="style gym">
+                    <p>gym</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews_header">
+                <h2>OUR HAPPY CUSTOMERS</h2>
+                <div class="reviews-nav">
+                    <button class="reviews-left-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="reviews-right-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="reviewer_name">Sarah M.</h3>
+                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear
+                        to
+                        elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                </div>
+                <div class="review">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="reviewer_name">Sarah M.</h3>
+                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear
+                        to
+                        elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                </div>
+                <div class="review">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="reviewer_name">Alex K.</h3>
+                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered
+                        Shop.co.
+                        The range of options they offer is truly remarkable, catering to a variety of tastes and
+                        occasions.”
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="reviewer_name">James L.</h3>
+                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+                        upon
+                        Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="reviewer_name">James L.</h3>
+                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+                        upon
+                        Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="newsletter">
+                <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                <form class="email-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button class="white-btn" type="submit">Subscribe to Newsletter</button>
+                </form>
+            </div>
+    
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>SHOP.CO</h3>
+                    <p>
+                        We have clothes that suits your style and which you’re proud to wear.
+                        From women to men.
+                    </p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-links">
+                    <div>
+                        <h4>COMPANY</h4>
+                        <a href="#">About</a>
+                        <a href="#">Features</a>
+                        <a href="#">Works</a>
+                        <a href="#">Career</a>
+                    </div>
+                    <div>
+                        <h4>HELP</h4>
+                        <a href="#">Customer Support</a>
+                        <a href="#">Delivery Details</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <h4>FAQ</h4>
+                        <a href="#">Account</a>
+                        <a href="#">Manage Deliveries</a>
+                        <a href="#">Orders</a>
+                        <a href="#">Payments</a>
+                    </div>
+                    <div>
+                        <h4>RESOURCES</h4>
+                        <a href="#">Free eBooks</a>
+                        <a href="#">Development Tutorial</a>
+                        <a href="#">How to - Blog</a>
+                        <a href="#">Youtube Playlist</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>Shop.co © 2000-2023, All Rights Reserved</p>
+                <div class="payments">
+                    <img src="images/payments_methods/Visa.png" alt="Visa">
+                    <img src="images/payments_methods/Mastercard.png" alt="Mastercard">
+                    <img src="images/payments_methods/PayPal.png" alt="PayPal">
+                    <img src="images/payments_methods/ApplePay.png" alt="Apple Pay">
+                    <img src="images/payments_methods/GooglePay.png" alt="Google Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
