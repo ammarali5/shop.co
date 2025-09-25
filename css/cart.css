@@ -1,4 +1,4 @@
-/* === cart === */
+/* === nav pages === */
 .navPages {
     padding: 2rem 0rem 0rem;
     display: flex;
@@ -30,9 +30,8 @@
 
 /* === cart === */
 .cart {
-    padding: 2rem;
+    margin: 3rem 0;
     font-family: Arial, sans-serif;
-    margin-bottom: 12rem;
 }
 
 .cart h1 {
@@ -185,5 +184,29 @@
 @media (max-width: 900px) {
     .cart-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 350px) {
+    .cart-item {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .item-actions {
+        margin-top: 1rem;
+        flex-direction: row;
+    }
+
+    .qty-actions {
+        order: 1;
+    }
+
+    .remove {
+        order: 2;
+    }
+
+    .order-summary {
+        padding: 1rem;
     }
 }

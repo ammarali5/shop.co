@@ -1,5 +1,5 @@
 /* === loading === */
-let loading = document.getElementById("loading")
+const loading = document.getElementById("loading")
 
 window.addEventListener("load", function() {
     loading.style.display = "none";
@@ -59,9 +59,9 @@ signup_closeBtn.addEventListener("click", closeSignUp);
 
 
 /* === nav search bar on small screens === */
-let search_icon = document.getElementById("search_collapse")
-let search_bar = document.getElementById("search_container")
-let close_search_bar = document.getElementById("close_search_bar")
+const search_icon = document.getElementById("search_collapse")
+const search_bar = document.getElementById("search_container")
+const close_search_bar = document.getElementById("close_search_bar")
 
 search_icon.onclick = function () {
     search_bar.style.display = "flex";
@@ -73,8 +73,8 @@ close_search_bar.onclick = function () {
 
 
 /* === nav links on small screens === */
-let collapse_bar = document.getElementById("collapse_bar");
-let links_bar = document.getElementById("nav-links");
+const collapse_bar = document.getElementById("collapse_bar");
+const links_bar = document.getElementById("nav-links");
 
 collapse_bar.onclick = function (event) {
     links_bar.classList.toggle("append");
@@ -93,4 +93,10 @@ document.addEventListener("click", function (event) {
 
 
 /* === scroll btns in reviews === */
-let d = document.getElementById("collapse_bar");
+const reviews_left_btn = document.querySelector(".reviews-left-btn");
+const reviews_right_btn = document.querySelector(".reviews-right-btn");
+const reviews = document.querySelector(".reviews");
+
+reviews_left_btn.onclick = () => reviews.scrollBy({ left: -300, behavior: "smooth" });
+
+reviews_right_btn.onclick =  () => reviews.scrollBy({ left: 300, behavior: "smooth" })
