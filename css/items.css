@@ -4,4 +4,8 @@
 
 .items-container {
     margin: 2rem auto 14rem auto;
+}   
+
+.category-items {
+    justify-content: space-evenly;
 }

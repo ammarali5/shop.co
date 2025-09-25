@@ -11,176 +11,8 @@
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .product-section {
-            display: flex;
-            gap: 40px;
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-
-        /* Left side thumbnails */
-        .product-images {
-            display: flex;
-            gap: 15px;
-        }
-
-        .thumbnails {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .thumbnails img {
-            width: 90px;
-            height: 90px;
-            border-radius: 10px;
-            cursor: pointer;
-            border: 2px solid transparent;
-            object-fit: cover;
-        }
-
-        .thumbnails img.active {
-            border-color: #000;
-        }
-
-        .main-image img {
-            width: 420px;
-            border-radius: 15px;
-        }
-
-        /* Right side details */
-        .product-details {
-            flex: 1;
-        }
-
-        .product-details h2 {
-            font-size: 28px;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        .rating {
-            color: gold;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .price {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        .price del {
-            color: gray;
-            margin-left: 10px;
-        }
-
-        .discount {
-            color: red;
-            margin-left: 10px;
-            font-weight: bold;
-        }
-
-        .description {
-            color: #555;
-            margin: 15px 0 25px;
-            line-height: 1.5;
-        }
-
-        /* Colors */
-        .colors {
-            margin-bottom: 20px;
-        }
-
-        .color-option {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            border: 2px solid transparent;
-            display: inline-block;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-
-        .color-option.active {
-            border-color: #000;
-        }
-
-        /* Sizes */
-        .sizes {
-            margin-bottom: 20px;
-        }
-
-        .size-option {
-            padding: 8px 16px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            margin-right: 10px;
-            cursor: pointer;
-            background: #f5f5f5;
-        }
-
-        .size-option.active {
-            background: #000;
-            color: #fff;
-            border-color: #000;
-        }
-
-        .size-option.disabled {
-            background: #eee;
-            color: #aaa;
-            cursor: not-allowed;
-        }
-
-        /* Quantity & Add to Cart */
-        .cart-actions {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .quantity {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            border-radius: 25px;
-            overflow: hidden;
-        }
-
-        .quantity button {
-            background: none;
-            border: none;
-            font-size: 20px;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-
-        .quantity span {
-            padding: 0 15px;
-            font-size: 18px;
-        }
-
-        .add-to-cart {
-            background: #000;
-            color: #fff;
-            padding: 15px 40px;
-            border-radius: 30px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/item.css">
 </head>
 
 <body>
@@ -195,7 +27,7 @@
                 </div>
                 <div class="center">
                     <ul class="collapse nav-links" id="nav-links">
-                        <li><a href="#">Shop<i></i></a></li>
+                        <li><a href="items.html">Shop<i></i></a></li>
                     </ul>
                     <div class="search_container" id="search_container">
                         <div class="search_bar">
@@ -246,20 +78,32 @@
         </div>
     </div>
 
-    <section class="product-section">
-        <!-- Left: Images -->
+    <nav class="navPages container">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <a href="items.html">casual</a>
+        <span>›</span>
+        <span class="active">T-SHIRT</span>
+    </nav>
+
+    <section class="product-section container">
         <div class="product-images">
             <div class="thumbnails">
-                <img src="images/product1.png" class="thumb active" alt="">
-                <img src="images/product2.png" class="thumb" alt="">
-                <img src="images/product3.png" class="thumb" alt="">
+                <div class="thumbnails-img active">
+                    <img src="images/item-image/image 1.png" class="thumb" alt="">
+                </div>
+                <div class="thumbnails-img">
+                    <img src="images/item-image/image 3.png" class="thumb" alt="">
+                </div>
+                <div class="thumbnails-img">
+                    <img src="images/item-image/image 4.png" class="thumb" alt="">
+                </div>
             </div>
             <div class="main-image">
-                <img id="mainProduct" src="images/product1.png" alt="">
+                <img id="mainProduct" src="images/item-image/image 1.png" alt="">
             </div>
         </div>
 
-        <!-- Right: Details -->
         <div class="product-details">
             <h2>ONE LIFE GRAPHIC T-SHIRT</h2>
             <div class="rating">
@@ -368,50 +212,7 @@
     </footer>
 
 
-    <script>
-        // Thumbnail switch
-        const thumbs = document.querySelectorAll('.thumb');
-        const mainProduct = document.getElementById('mainProduct');
-        thumbs.forEach(thumb => {
-            thumb.addEventListener('click', () => {
-                document.querySelector('.thumb.active').classList.remove('active');
-                thumb.classList.add('active');
-                mainProduct.src = thumb.src;
-            });
-        });
-
-        // Quantity control
-        let qty = 1;
-        const qtySpan = document.getElementById('qty');
-        document.getElementById('increase').addEventListener('click', () => {
-            qty++;
-            qtySpan.textContent = qty;
-        });
-        document.getElementById('decrease').addEventListener('click', () => {
-            if (qty > 1) {
-                qty--;
-                qtySpan.textContent = qty;
-            }
-        });
-
-        // Size selection
-        const sizes = document.querySelectorAll('.size-option:not(.disabled)');
-        sizes.forEach(size => {
-            size.addEventListener('click', () => {
-                document.querySelector('.size-option.active').classList.remove('active');
-                size.classList.add('active');
-            });
-        });
-
-        // Color selection
-        const colors = document.querySelectorAll('.color-option');
-        colors.forEach(color => {
-            color.addEventListener('click', () => {
-                document.querySelector('.color-option.active').classList.remove('active');
-                color.classList.add('active');
-            });
-        });
-    </script>
+    <script src="scripts/item.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
