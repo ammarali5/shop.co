@@ -134,6 +134,7 @@
     border: 1px solid var(--secondry-gray);
     padding: 1.5rem;
     border-radius: 1rem;
+
 }
 
 .order-summary h2 {
@@ -168,6 +169,7 @@
     border-radius: 20px 0 0 20px;
     border: 1px solid var(--gray);
     outline: none;
+    width: 70%;
 }
 
 .promo button {
@@ -184,6 +186,10 @@
 @media (max-width: 900px) {
     .cart-container {
         grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        margin: 0 auto;
     }
 }
 
